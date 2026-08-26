@@ -1,6 +1,6 @@
 ## Single-Cell_Internship_HackBio
 ## Project Stage 3: SARS-CoV-2_Analysis
-## SARS-Cov-2 Infection Dynamics: trajectory analysis on scRNA-seq data from SARS-CoV-2-infected human bronchial epithelial cells (HBEC).
+## SARS-CoV-2 Infection Dynamics: trajectory analysis on scRNA-seq data from SARS-CoV-2-infected human bronchial epithelial cells (HBEC).
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 # COMPUTATIONAL ANALYSIS WORKFLOW
