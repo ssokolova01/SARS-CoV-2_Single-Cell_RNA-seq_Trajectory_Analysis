@@ -4,18 +4,20 @@
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 # COMPUTATIONAL ANALYSIS WORKFLOW
 ***CODES:***  
-Code trajectory_2500_lungs_final.py handles the cross-sectional day-by-day cell type distribution mapping.  
-Code trajectory_merge_test_final.py merges temporal stages to compute the definitive single-cell pseudotime trajectory.  
+* **Code trajectory_2500_lungs_final.py** handles the cross-sectional day-by-day cell type distribution mapping.  
+* **Code trajectory_merge_test_final.py** merges temporal stages to compute the definitive single-cell pseudotime trajectory.  
 
-***Common steps:***
+#### ***Common steps:***
 1. *Data Processing and Quality Control:* Single-cell RNA-seq data from four timepoints of SARS-CoV-2 infection process (Mock, Day 1, Day 2, Day 3) were filtered by parameters: cells with <10% mitochondrial RNA, genes per cell > 200, genes expressed in >3 cells. Doublets were removed using Scrublet.
-2. *Normalization and Feature Selection:* Data were normalized and log transformed. Top 2,500 of highly variable genes was selected for further analysis.  
-***Separate Dataset (Timepoint) Analysis:*** each dataset (timepoint) was analyzed independently. 
+2. *Normalization and Feature Selection:* Data were normalized and log transformed. Top 2,500 of highly variable genes was selected for further analysis.
+
+#### ***Separate Dataset (Timepoint) Analysis:*** each dataset (timepoint) was analyzed independently. 
 3. *PCA and UMAP dimensionality reduction* were performed. 
 4. *Leiden clustering* (resolution 0.5) cell populations identification in each infected state. 
 5. *Cell type annotation* using PanglaoDB database (parameters: markers = ‘Lungs’, tmin=2). Further manual annotation for NA clusters (Day_2 and Day_3 timepoints) was performed based on marker gene expression.
 5. *Pseudotime analysis* was performed separately for each infection timepoint dataset to examine cellular heterogeneity within infection stages.  
-***Integrated Dataset (Timepoint) Analysis:*** After quality control, normalization and feature selection individual datasets were merged for infection progression analysis.  
+
+#### ***Integrated Dataset (Timepoint) Analysis:*** After quality control, normalization and feature selection individual datasets were merged for infection progression analysis.  
 3. *Batch correction* was applied using BBKNN (Batch-Balanced K-Nearest Neighbors) method which suits the best for data variations correction along with preserving biological difference.
 4. *UMAP and Leiden clustering* were performed on the integrated and batch-corrected combined dataset.
 5. *Cell annotation* was conducted using the same parameters as for the separated timepoint analysis.
