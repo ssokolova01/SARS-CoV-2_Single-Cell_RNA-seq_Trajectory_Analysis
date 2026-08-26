@@ -22,7 +22,8 @@
 4. *UMAP and Leiden clustering* were performed on the integrated and batch-corrected combined dataset.
 5. *Cell annotation* was conducted using the same parameters as for the separated timepoint analysis.
 6. *Trajectory Analysis:* during integrated pseudotime analysis Mock ciliated cell were selected as a as trajectory root to order cells along infection progression from healthy to infected states. PAGA (Partition-based Graph Abstraction) was computed to visualize relationships between cell type clusters. Trajectory visualization was performed with Force-directed graph layout (ForceAtlas2).
-***Gene Expression Analysis:*** For both separate and integrated datasets gene expression of viral entry genes (ACE2, TMPRSS2, TMPRSS4, CTSL) and SARS-CoV-2 infection biomarkers (ENO2) was quantitatively and visually analysed across cell types, timepoints, and pseudotime trajectories using UMAP plots, violin plots, and heatmaps.
+
+#### ***Gene Expression Analysis:*** For both separate and integrated datasets gene expression of viral entry genes (ACE2, TMPRSS2, TMPRSS4, CTSL) and SARS-CoV-2 infection biomarkers (ENO2) was quantitatively and visually analysed across cell types, timepoints, and pseudotime trajectories using UMAP plots, violin plots, and heatmaps.
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 # INTRODUCTION
 ***Introductory explanations.***
