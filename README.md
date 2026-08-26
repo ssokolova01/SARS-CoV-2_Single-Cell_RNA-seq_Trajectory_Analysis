@@ -3,8 +3,8 @@
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 # COMPUTATIONAL ANALYSIS WORKFLOW
-***CODES:*** 
-Code trajectory_2500_lungs_final.py handles the cross-sectional day-by-day cell type distribution mapping
+***CODES:***
+Code trajectory_2500_lungs_final.py handles the cross-sectional day-by-day cell type distribution mapping.
 Code trajectory_merge_test_final.py merges temporal stages to compute the definitive single-cell pseudotime trajectory.
 ***Common steps:***
 1. *Data Processing and Quality Control:* Single-cell RNA-seq data from four timepoints of SARS-CoV-2 infection process (Mock, Day 1, Day 2, Day 3) were filtered by parameters: cells with <10% mitochondrial RNA, genes per cell > 200, genes expressed in >3 cells. Doublets were removed using Scrublet.
