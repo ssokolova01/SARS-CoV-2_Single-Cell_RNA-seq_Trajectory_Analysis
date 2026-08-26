@@ -13,7 +13,7 @@ Code trajectory_merge_test_final.py merges temporal stages to compute the defini
 3. *PCA and UMAP dimensionality reduction* were performed. 
 4. *Leiden clustering* (resolution 0.5) cell populations identification in each infected state. 
 5. *Cell type annotation* using PanglaoDB database (parameters: markers = ‘Lungs’, tmin=2). Further manual annotation for NA clusters (Day_2 and Day_3 timepoints) was performed based on marker gene expression.
-5. *Pseudotime analysis* was performed separately for each infection timepoint dataset to examine cellular heterogeneity within infection stages.
+5. *Pseudotime analysis* was performed separately for each infection timepoint dataset to examine cellular heterogeneity within infection stages.  
 ***Integrated Dataset (Timepoint) Analysis:*** After quality control, normalization and feature selection individual datasets were merged for infection progression analysis.  
 3. *Batch correction* was applied using BBKNN (Batch-Balanced K-Nearest Neighbors) method which suits the best for data variations correction along with preserving biological difference.
 4. *UMAP and Leiden clustering* were performed on the integrated and batch-corrected combined dataset.
